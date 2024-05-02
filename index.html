@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>RenewTrends Dashboard</title>    
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+DyZpr+Y40kL8x64Z+Km8R5t+gJ4yXn2l+M6Oq0" crossorigin="anonymous"> -->
+</head>
+<body>
+    <style>
+       .img-container {
+        position: relative;
+        background-color: #17a2b8;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .img-container:hover img {
+        transform: scale(1.1); /* Efek zoom saat dihover */
+    }
+
+    .img-container h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .img-container p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        margin: 0;
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .img-container:hover h2 {
+        opacity: 0;
+    }
+
+    .img-container:hover p {
+        opacity: 1;
+    }
+
+    /* Penyesuaian untuk tampilan handphone */
+    @media (max-width: 767.98px) {
+    .project {
+        display: block !important;
+        text-align: center; /* Menengahkan konten di dalam div */
+        margin: 0 auto;
+        padding: 50px;
+    }
+}
+
+
+    </style>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">RenewTrends</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown"> <!-- Tambahkan kelas dropdown di sini -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Analisis <!-- Tambahkan dropdown-toggle di sini -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Tambahkan dropdown-menu di sini -->
+                    <a class="dropdown-item" href="analyst.html">Akses Kelistrikan</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="insight.html">Insights</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">Berita</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kontak</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="landing-img" style="background: #ffffff url('assets/img/image.png') center bottom/cover no-repeat fixed;height: 500px;">
+    <div class="container text-center p-5 mt-5">
+        <h1  style="color: white; font-weight: bold;;">RenewTrends</h1>
+    </div>
+    
+    <div class="container text-center p-3 mt-2">
+        <h1 id="animate-type" style="color: white; font-weight: bold;"></h1>
+    </div>
+    
+<div class="wrapper text-justify" style="background-color:cyaan;">
+<div class="container text-center">
+
+
+</div>
+</div>
+</div>
+<div class="img-wrap">
+    
+    <div class="container mt-5" style="background: greenaellow; border-radius: 10px; padding: 20px;">
+        
+        <div class="container">
+            <h2 style="text-align: center;">Definisi</h2>
+            <p style="color: #333;">
+                <span style="color: #ff0000; font-weight: bold;">Energi berkelanjutan</span>, atau sering disebut juga sebagai 
+                <span style="color: #007bff; font-weight: bold;">energi terbarukan</span>, adalah sumber energi yang berasal dari sumber daya alam yang dapat 
+                <span style="color: #28a745; font-weight: bold;">diperbaharui</span> dan tidak akan habis. Contohnya meliputi energi surya, angin, air, panas bumi, dan biomassa. 
+                <span style="color: #6610f2; font-weight: bold;">Keberlanjutan</span> energi ini diukur dari kemampuannya untuk diperbaharui secara alami dalam jangka waktu manusia, tanpa mengalami 
+                <span style="color: #dc3545; font-weight: bold;">kepunahan</span>. Penggunaan energi berkelanjutan dianggap penting dalam mengurangi ketergantungan pada bahan bakar fosil yang 
+                <span style="color: #ffc107; font-weight: bold;">tidak terbarukan</span> dan membantu mengurangi dampak negatif terhadap lingkungan, seperti 
+                <span style="color: #6c757d; font-weight: bold;">polusi udara</span> dan 
+                <span style="color: #17a2b8; font-weight: bold;">perubahan iklim</span>.
+            </p>    </div>
+    
+        <div class="container mb-3 ">
+            <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 640px;">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7PrMaAY39sY" allowfullscreen></iframe>
+            </div>
+            
+            <div class="container p-3">
+        <p style="font-size: 1.2em; font-weight: bold; text-align: center;">Sustainable Energy For All</p>
+    </div>
+        </div>
+    </div>
+    
+    
+
+</div>
+
+    <div class="container text-justify p-5">
+        
+               <h2 style="text-align: center;">Projek Kami</h2>
+               <p>Projek ini bukan hanya tentang mengurangi konsumsi energi berlebihan, tetapi juga tentang menciptakan budaya yang lebih sadar lingkungan dan berkelanjutan. Dengan kolaborasi dan partisipasi aktif dari masyarakat, kami yakin bahwa kita dapat menciptakan perubahan positif dalam cara kita menggunakan energi. Mari bersama-sama membangun masa depan yang lebih hijau dan berkelanjutan untuk generasi mendatang.</p>
+               
+              
+</div>
+         <div class="project" style="justify-content: center; display: flex;">
+                   <div class="img-container p-5 m-1" style="background: #ffffff url(assets/img/62a215c9d5f66d5b0a1b0bf1_Analytical-skill-adalah.jpg) center center/cover no-repeat; width: 300px; height: 300px;">
+                    <h2>Analyst</h2>
+                    <p>Melakukan pengamatan, dan perhitungan untuk memahami pola konsumsi energi terbarukan di setiap negara</p>
+                </div>
+                   <div class="img-container p-5 m-1" style="background: #ffffff url(assets/img/41586_2016_Article_BF538308a_Figb_HTML.jpg) center center/cover no-repeat; width: 300px; height: 300px;">
+                    <h2>Prediction</h2>
+                    <p>Membuat model yang dapat melakukan prediksi pola konsumsi energi di masa yang akan datang</p>
+                </div>
+                   <div class="img-container p-5 m-1" style="background: #ffffff url(assets/img/Storylytics-Blog-Graphics-Lightbulbs-1024x615.png) center center/cover no-repeat; width: 300px; height: 300px;">
+                    <h2>Insight</h2>
+                    <p>Memberikan informasi - informasi terkait hasil analisa dan pengamatan pola konsumsi energi.</p>
+                </div>
+
+                    
+</div>
+    
+<div class="container mt-5">
+    <h2>Lihat berita terbaru</h2>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Pertemuan-Tingkat-Tinggi-antara-Pemimpin-Singapura-dan-Indonesia-Menguatkan-Kerja-Sama-Bilateral,-Menekankan-Kemitraan-Energi-Terbarukan.html">
+                <div class="card border-0"> <!-- Tambahkan kelas border-0 di sini -->
+                    <img src="assets\img\electricity-1330214_1920.webp" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pertemuan Tingkat Tinggi antara Pemimpin Singapura dan Indonesia Menguatkan Kerja Sama Bilateral, Menekankan Kemitraan Energi Terbarukan</h5>
+                        <p class="card-text">Perdana Menteri Lee Hsien Loong dari Singapura dan Presiden Joko Widodo dari Indonesia bertemu di Bogor, Indonesia, untuk berbicara tentang hubungan antara kedua negara.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Pakar-IPB-Pertamina-Sustainable-Energy-Center-di-IKN-sangat-positif.html">
+                <div class="card border-0"> <!-- Tambahkan kelas border-0 di sini -->
+                    <img src="assets/img/antarafoto-pertamina-sustainable-energy-center-22092023-dr-03_1.jpg.webp" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pakar IPB: Pertamina Sustainable Energy Center di IKN sangat positif</h5>
+                        <p class="card-text">Pakar ekonomi lingkungan IPB University Aceng Hidayat menilai positif pengembangan Pertamina Sustainable Energy Center (Pusat Energi Berkelanjutan) di Ibu Kota Nusantara (IKN).</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Mahasiswa-KKN-UNS-Kenalkan-Sustainable-Energy-ke-Siswa-SD-dan-Masyarakat-Desa-Kepyar-Wonogiri.html">
+                <div class="card border-0"> 
+                    <img src="assets\img\WhatsApp-Image-2024-03-21-at-15.57.45-1-768x1024.jpeg" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Mahasiswa KKN UNS Kenalkan Sustainable Energy ke Siswa SD dan Masyarakat Desa Kepyar, Wonogiri
+</h5>
+                        <p class="card-text">Mahasiswa Universitas Sebelas Maret (UNS) Surakarta yang sedang mengikuti Kuliah Kerja Nyata (KKN) mengenalkan energi alternatif kepada masyarakat dan siswa SD di Desa Kepyar, Wonogiri.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Lanjutkan-Sinergi-dengan-USAID,-Pertamina-Tingkatkan-Komitmen-Keberlanjutan.html">
+                <div class="card border-0"> <!-- Tambahkan kelas border-0 di sini -->
+                    <img src="assets\img\20240502044718096_9fa824cdac56444187142398f4ad4e3a.jpg" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lanjutkan Sinergi dengan USAID, Pertamina Tingkatkan Komitmen Keberlanjutan</h5>
+                        <p class="card-text">Direktur Keuangan PT Pertamina (Persero) Emma Sri Martini mengungkap penandatanganan KAK tersebut menandai kelanjutan sinergi antara Pertamina dan USAID yang dimulai sejak tahun 2022 dan diperluas dengan program-program baru untuk tahun 2024.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<footer class="footer mt-auto py-3 bg-dark"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <p>&copy; 2024 RenewTrends. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="#" class="text-white">Tentang Kami</a> |
+                <a href="#" class="text-white">Kontak</a>
+            </div>
+        </div>
+    </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+DyZpr+Y40kL8x64Z+Km8R5t+gJ4yXn2l+M6Oq0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-bmgtU3f0Pzz7oXNJc6+tPLDQy9tcj9o2LgDk9bxUgoGd1gyiynXiRFwHV+FnJeu8" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/typeit.js"></script>
+</footer>
+
+
+</body>
+</html>

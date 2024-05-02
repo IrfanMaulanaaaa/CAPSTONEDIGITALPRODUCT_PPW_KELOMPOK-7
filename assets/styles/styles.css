@@ -1,0 +1,18 @@
+*{
+    font-size: medium;
+    font-family: monospace;
+}
+
+@media (max-width: 767.98px) {
+    *{
+        font-size:medium;
+    }    
+}
+
+#animate-type {
+    color: white;
+    text-shadow: 4px 5px 10px #968d8d;
+
+    /* -webkit-text-stroke-width: 0.4px; */
+    /* -webkit-text-stroke-color: black; */
+}

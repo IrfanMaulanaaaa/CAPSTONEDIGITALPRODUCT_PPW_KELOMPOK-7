@@ -1,0 +1,14 @@
+<?php
+$new_data = array(
+    'area' => $_POST['area'],
+    // Tambahkan data input untuk fitur-fitur lainnya sesuai dengan nama yang sesuai di formulir HTML
+);
+
+// Lakukan prediksi menggunakan model DTC
+// Pastikan untuk menggunakan model dan skalar yang sesuai dengan yang digunakan dalam model Python Anda
+// Ganti path model dan skalar sesuai dengan lokasi sebenarnya di server
+$predicted_price = predict_price($new_data);
+
+// Kirim hasil prediksi kembali ke JavaScript
+echo json_encode(array('predicted_price' => $predicted_price));
+?>

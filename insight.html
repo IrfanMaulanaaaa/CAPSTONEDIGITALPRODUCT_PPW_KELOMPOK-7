@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .table-container {
+            overflow-x: auto;
+        }
+
+        #data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+       
+
+        #data-table th, #data-table td {
+            padding: 8px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        #data-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">RenewTrends</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown"> <!-- Tambahkan kelas dropdown di sini -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Analisis <!-- Tambahkan dropdown-toggle di sini -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Tambahkan dropdown-menu di sini -->
+                    <a class="dropdown-item" href="analyst.html">Akses Kelistrikan</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                    <a class="dropdown-item" href="#">Analisis 2</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="insight.html">Insights</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">Berita</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kontak</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container pt-5 mt-5 mb-5 text-center">
+    <h1>Konsumsi Energi Setiap Negara Per Kapita Tertinggi dan Terendah</h1>
+    <hr>
+    <div class="table-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="table-responsive">
+                <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Entity</th>
+                        <th>Primary energy consumption per capita (kWh/person)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <h1 style="font-size:medium;">Konsumsi energi terendah</h1>
+                    <tr>
+                        <td>Qatar</td>
+                        <td>215565.206190</td>
+                    </tr>
+                    <tr>
+                        <td>Iceland</td>
+                        <td>157872.888286</td>
+                    </tr>
+                    <tr>
+                        <td>Bahrain</td>
+                        <td>153990.354762</td>
+                    </tr>
+                    <tr>
+                        <td>Singapore</td>
+                        <td>140814.132381</td>
+                    </tr>
+                    <tr>
+                        <td>United Arab Emirates</td>
+                        <td>140361.304048</td>
+                    </tr>
+                    <tr>
+                        <td>Trinidad and Tobago</td>
+                        <td>137467.305952</td>
+                    </tr>
+                    <tr>
+                        <td>Kuwait</td>
+                        <td>119108.304143</td>
+                    </tr>
+                    <tr>
+                        <td>Canada</td>
+                        <td>113492.290810</td>
+                    </tr>
+                    <tr>
+                        <td>Norway</td>
+                        <td>109565.265190</td>
+                    </tr>
+                    <tr>
+                        <td>Luxembourg</td>
+                        <td>90423.056429</td>
+                    </tr>
+                </tbody>
+            </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="table-responsive">
+                <table id="data-table">
+                <thead>
+                    <h1 style="font-size:medium;">Konsumsi energi tertinggi</h1>                    
+                    <tr>
+                        <th>Entity</th>
+                        <th>Primary energy consumption per capita (kWh/person)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tuvalu</td>
+                        <td>0.000000</td>
+                    </tr>
+                    <tr>
+                        <td>Burundi</td>
+                        <td>212.153190</td>
+                    </tr>
+                    <tr>
+                        <td>Chad</td>
+                        <td>222.486983</td>
+                    </tr>
+                    <tr>
+                        <td>Somalia</td>
+                        <td>284.050823</td>
+                    </tr>
+                    <tr>
+                        <td>Central African Republic</td>
+                        <td>309.469573</td>
+                    </tr>
+                    <tr>
+                        <td>Rwanda</td>
+                        <td>373.834004</td>
+                    </tr>
+                    <tr>
+                        <td>Niger</td>
+                        <td>385.941909</td>
+                    </tr>
+                    <tr>
+                        <td>Sierra Leone</td>
+                        <td>509.899380</td>
+                    </tr>
+                    <tr>
+                        <td>Ethiopia</td>
+                        <td>542.731811</td>
+                    </tr>
+                    <tr>
+                        <td>Madagascar</td>
+                        <td>555.880324</td>
+                    </tr>
+                </tbody>
+            </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <p>&copy; 2024 RenewTrends. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="#" class="text-white">Tentang Kami</a> |
+                <a href="#" class="text-white">Kontak</a>
+            </div>
+        </div>
+    </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+DyZpr+Y40kL8x64Z+Km8R5t+gJ4yXn2l+M6Oq0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-bmgtU3f0Pzz7oXNJc6+tPLDQy9tcj9o2LgDk9bxUgoGd1gyiynXiRFwHV+FnJeu8" crossorigin="anonymous"></script>
+
+</footer>
+
+</body>
+</html>
