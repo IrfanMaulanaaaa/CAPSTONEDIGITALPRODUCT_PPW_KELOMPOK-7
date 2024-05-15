@@ -1,0 +1,65 @@
+*{
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    background-image: url('assets/img/background.svg');
+    
+}
+
+@media (max-width: 767.98px) {
+    *{
+        font-size:medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    background-image: url('assets/img/background.svg');
+        
+    }   
+    
+    
+}
+
+#animate-type {
+    color: white;
+    text-shadow: 4px 5px 10px #968d8d;
+
+    /* -webkit-text-stroke-width: 0.4px; */
+    /* -webkit-text-stroke-color: black; */
+}
+.custom-button {
+    border: 2px solid transparent; /* Menambahkan border yang transparan */
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    border-color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .button-text {
+    display: inline-block;
+  }
+  
+  .icon {
+    margin-left: 10px; /* Jarak antara teks dan ikon */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Menambahkan efek transisi untuk opacity dan transform */
+    transform: translateX(20px); /* Memindahkan ikon ke arah kanan di luar tombol */
+  }
+  
+  .custom-button:hover {
+    padding: 12px 52px; /* Sedikit perbesar tombol ketika dihover */
+    outline: none; /* Hilangkan outline saat dihover */
+    border-color: transparent; /* Hilangkan border saat dihover */
+  }
+  
+  .custom-button:hover .icon {
+    opacity: 1;
+    transform: translateX(0); /* Memindahkan ikon ke posisi aslinya */
+  }
+  

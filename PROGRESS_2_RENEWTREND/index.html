@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>RenewTrends | Dashboard</title>    
+    <link rel="stylesheet" href="assets/styles/styles.css">
+        <link rel="icon" type="image/png" href="assets/img/leaf.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <style>
+        
+       .img-container {
+        position: relative;
+        background-color: #17a2b8;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .img-container:hover img {
+        transform: scale(1.1); 
+    }
+
+    .img-container h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .img-container p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        margin: 0;
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .img-container:hover h2 {
+        opacity: 0;
+    }
+
+    .img-container:hover p {
+        opacity: 1;
+    }
+    .subscribe-form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form .input-group {
+    transition: all 0.3s;
+}
+
+.subscribe-form .input-group-append {
+    transition: all 0.3s;
+}
+
+.subscribe-form .form-control:focus,
+.subscribe-form .btn-primary:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.subscribe-form .btn-primary {
+    border-radius: 0 5px 5px 0;
+}
+
+.subscribe-form .btn-primary:hover {
+    background-color: #007bff;
+}
+
+
+    @media (max-width: 767.98px) {
+    .project {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    p{
+        font-size:14px;
+    }
+    h2{
+        font-size:24px;
+    }
+}
+@media only screen and (min-width: 768px) {
+  .landing-img {
+    height: 400px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  .landing-img {
+    height: 600px;
+  }
+
+}
+
+
+    </style>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <a class="navbar-brand" href="#">RenewTrends</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="login.php">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="insight.html">Insights</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.php">Berita</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="landing-img" style="background: #ffffff url('assets/img/taking-beautiful-photos-of-nature-2.png') center bottom/cover no-repeat fixed;">
+    <div class="container text-center p-5 mt-5">
+        
+        <h2  style="color: white; font-weight: bold;text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">RenewTrends</h2>
+    </div>
+    
+    <div class="container text-center  ">
+        <h2 id="" style="color: white; font-weight: bold;text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">Let's harness the power of the sun, wind, and water to fuel our world sustainably</h2>
+    </div>
+    
+    <div id="start"></div>
+    <div class="container text-center mt-5" style="justify-content: center;">
+        <a href="#subscribe"><button class="custom-button text-center">
+            <span class="button-text" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;font-weight: bold;font-size: 15px;">Berlangganan di berita kita</span>
+            <span class="icon"><i class="fas fa-chevron-right"></i></span>
+          </button><br><br>
+          
+
+        </a>
+        <a href="#start">
+
+            <img src="assets\img\chevron (1).png" alt="">
+        </a>
+    </div>
+
+</div>
+    
+
+    <div class="content mt-5" style=" border-radius: 10px;">
+        
+        <div class="container">
+            <h2 style="text-align: center;">Definisi</h2>
+            <p style="color: #333; text-align: justify;">
+                <span style="color: #ff0000; font-weight: bold;">Energi berkelanjutan</span>, atau sering disebut juga sebagai 
+                <span style="color: #007bff; font-weight: bold;">energi terbarukan</span>, adalah sumber energi yang berasal dari sumber daya alam yang dapat 
+                <span style="color: #28a745; font-weight: bold;">diperbaharui</span> dan tidak akan habis. Contohnya meliputi energi surya, angin, air, panas bumi, dan biomassa. 
+                <span style="color: #6610f2; font-weight: bold;">Keberlanjutan</span> energi ini diukur dari kemampuannya untuk diperbaharui secara alami dalam jangka waktu manusia, tanpa mengalami 
+                <span style="color: #dc3545; font-weight: bold;">kepunahan</span>. Penggunaan energi berkelanjutan dianggap penting dalam mengurangi ketergantungan pada bahan bakar fosil yang 
+                <span style="color: #ffc107; font-weight: bold;">tidak terbarukan</span> dan membantu mengurangi dampak negatif terhadap lingkungan, seperti 
+                <span style="color: #6c757d; font-weight: bold;">polusi udara</span> dan 
+                <span style="color: #17a2b8; font-weight: bold;">perubahan iklim</span>.
+            </p>
+            
+        </div>
+    
+        <div class="container mb-3 ">
+            <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 640px;">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7PrMaAY39sY" allowfullscreen></iframe>
+            </div>
+            
+            <div class="container p-3">
+        <p style="font-size: 1.2em; font-weight: bold; text-align: center;">Sustainable Energy For All</p>
+    </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="container text-justify">
+        
+               <h2 style="text-align: center;">Projek Kami</h2>
+               <p>Projek ini bukan hanya tentang mengurangi konsumsi energi berlebihan, tetapi juga tentang menciptakan budaya yang lebih sadar lingkungan dan berkelanjutan. Dengan kolaborasi dan partisipasi aktif dari masyarakat, kami yakin bahwa kita dapat menciptakan perubahan positif dalam cara kita menggunakan energi. Mari bersama-sama membangun masa depan yang lebih hijau dan berkelanjutan untuk generasi mendatang.</p>
+               
+    </div>
+    <div class="project" style="justify-content: center; display: flex;">
+        <div class="img-container p-5 m-1" style="background: #ffffff url(assets/img/62a215c9d5f66d5b0a1b0bf1_Analytical-skill-adalah.jpg) center center/cover no-repeat; width: 300px; height: 300px;">
+            <h2 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">Analyst</h2>
+            <p>Melakukan pengamatan, dan perhitungan untuk memahami pola konsumsi energi terbarukan di setiap negara</p>
+        </div>
+        <div class="img-container p-5 m-1" style="background: #ffffff url(assets/img/41586_2016_Article_BF538308a_Figb_HTML.jpg) center center/cover no-repeat; width: 300px; height: 300px;">
+            <h2 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">Prediction</h2>
+            <p>Membuat model yang dapat melakukan prediksi pola konsumsi energi di masa yang akan datang</p>
+        </div>
+        <div class="img-container p-5 m-1" style="background: #ffffff url(assets/img/Storylytics-Blog-Graphics-Lightbulbs-1024x615.png) center center/cover no-repeat; width: 300px; height: 300px;">
+            <h2 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">Insight</h2>
+            <p>Memberikan informasi - informasi terkait hasil analisa dan pengamatan pola konsumsi energi.</p>
+        </div>
+    </div>
+        
+<div class="container mt-5">
+    <h5 >Lihat berita terkait</h5>
+    <hr>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Pertemuan-Tingkat-Tinggi-antara-Pemimpin-Singapura-dan-Indonesia-Menguatkan-Kerja-Sama-Bilateral,-Menekankan-Kemitraan-Energi-Terbarukan.html">
+                <div class="card border-0"> 
+                        <img src="assets\img\electricity-1330214_1920.webp" class="card-img-top" alt="Placeholder Image">
+                        
+
+                    <div class="card-body text p-1 text-justify">
+                        <h5 class="card-title" style="font-size: 15px;">Pertemuan Tingkat Tinggi antara Pemimpin Singapura dan Indonesia...</h5>
+                        <p class="card-text" style="font-size: 13px;">Perdana Menteri Lee Hsien Loong dari Singapura dan Presiden Joko Widodo dari Indonesia bertemu di....</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Pakar-IPB-Pertamina-Sustainable-Energy-Center-di-IKN-sangat-positif.html">
+                <div class="card border-0"> 
+                    <img src="assets/img/antarafoto-pertamina-sustainable-energy-center-22092023-dr-03_1.jpg.webp" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body p-1 text-justify">
+                        <h5 class="card-title"style="font-size: 15px;">Pakar IPB: Pertamina Sustainable Energy Center di IKN sangat positif</h5>
+                        <p class="card-text"style="font-size: 13px;">Pakar ekonomi lingkungan IPB University Aceng Hidayat menilai positif pengembangan...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Mahasiswa-KKN-UNS-Kenalkan-Sustainable-Energy-ke-Siswa-SD-dan-Masyarakat-Desa-Kepyar-Wonogiri.html">
+                <div class="card border-0"> 
+                    <img src="assets\img\WhatsApp-Image-2024-03-21-at-15.57.45-1-768x1024.jpeg" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body p-1 text-justify">
+                        <h5 class="card-title"style="font-size: 15px;">Mahasiswa KKN UNS Kenalkan Sustainable Energy ke Siswa SD dan...
+</h5>
+                        <p class="card-text"style="font-size: 13px;">Mahasiswa Universitas Sebelas Maret (UNS) Surakarta yang sedang mengikuti Kuliah Kerja Nyata (KKN) mengenalkan...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="Lanjutkan-Sinergi-dengan-USAID,-Pertamina-Tingkatkan-Komitmen-Keberlanjutan.html">
+                <div class="card border-0"> 
+                    <img src="assets\img\20240502044718096_9fa824cdac56444187142398f4ad4e3a.jpg" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body p-1 text-justify">
+                        <h5 class="card-title"style="font-size: 15px;" >Lanjutkan Sinergi dengan USAID, Pertamina Tingkatkan...</h5>
+                        <p class="card-text"style="font-size: 13px;">Direktur Keuangan PT Pertamina (Persero) Emma Sri Martini mengungkap penandatanganan KAK...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<div class="subscribe" id="subscribe" style="background: #ffffff url('assets/img/taking-beautiful-photos-of-nature-2.png') center bottom/cover no-repeat fixed; height: 500px;">
+    <div class="container mt-5 pt-5 text-center" style="color: white;">
+        <h5 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">Langganan Newsletter</h5>
+        <p style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.3);">Dapatkan berita terbaru langsung di kotak masuk email Anda.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="subscribeForm" action="subscribe.php" method="POST" class="subscribe-form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Masukkan alamat email Anda" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Masukkan password Anda" name="password" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                </form>
+                
+                <form id="unsubscribeForm" action="unsubscribe.php" method="POST" class="unsubscribe-form" style="display: none;">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Masukkan alamat email Anda" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Masukkan password Anda" name="password" required>
+                    </div>
+                    <button class="btn btn-danger" type="submit">Unsubscribe</button>
+                </form>
+                
+                <button id="toggleForm" class="btn btn-secondary">Klik untuk unsubscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const subscribeForm = document.getElementById('subscribeForm');
+    const unsubscribeForm = document.getElementById('unsubscribeForm');
+    const toggleButton = document.getElementById('toggleForm');
+
+    toggleButton.addEventListener('click', function() {
+        if (subscribeForm.style.display === 'block') {
+            subscribeForm.style.display = 'none';
+            unsubscribeForm.style.display = 'block';
+            toggleButton.textContent = 'Klik untuk Sign Up'; 
+        } else {
+            subscribeForm.style.display = 'block';
+            unsubscribeForm.style.display = 'none';
+            toggleButton.textContent = 'Klik untuk unsubscribe'; 
+        }
+    });
+</script>
+<footer class="footer mt-auto py-3 bg-dark"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <p>&copy; 2024 RenewTrends. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="about.html" class="text-white">Tentang Kami</a> |
+                <a href="contact.php" class="text-white">Kontak</a>
+            </div>
+        </div>
+    </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</footer>
+
+
+
+</body>
+</html>
