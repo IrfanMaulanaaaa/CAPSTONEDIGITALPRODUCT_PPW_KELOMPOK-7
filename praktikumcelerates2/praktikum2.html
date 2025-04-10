@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Celerates</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-image: url('src/gatito-cat.gif ');  
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-out forwards;
+
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      padding: 20px 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    #image {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    #image img {
+      width: 120px;
+    }
+
+    .section {
+      margin-bottom: 2px;
+    }
+
+    .section h3 {
+      margin: 10px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .section li{
+      background-color:antiquewhite;
+      list-style-type: none;
+    }
+
+    .button {
+      display: block;
+      background-color: greenyellow;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: left;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #f0f0f0;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+
+    button.kirim {
+      background-color:#2AAA62;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: seagreen;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Celerates Acceleration Mastery Program</h2><br>
+    <div class="logo" id="image">
+      <img src="src/image.png" alt="Logo Celerates" />
+    </div>
+
+    <div class="section" style="text-align: center;">
+      <strong>Jadwal Pembelajaran dan To-do-list</strong><br>
+      <strong>Web Development & UI/UX Design</strong><br>
+<hr>
+    </div>
+
+    <div class="section">
+      <h3>📅 Jadwal Kegiatan</h3>
+      <table>
+        <tr>
+          <th>Hari</th>
+          <th>Kegiatan</th>
+          <th>Jam</th>
+        </tr>
+        <tr>
+          <td>Senin Rabu Kamis</td>
+          <td>Synchronous</td>
+          <td>19:00 - 21:00</td>
+        </tr>
+        <tr>
+          <td>Selasa Jumat</td>
+          <td>Asynchronous</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </div><br>
+    <div class="section">
+      <h3>✅To-do-list</h3>
+      <h4>Macro Challange</h4>
+      <ul>
+        <li><p>tampilan Hi-fi</p></li>
+        <li><p>prototype</p></li>
+        <li><p>Frontend</p></li>
+      </ul>
+      <h4>Tugas mandiri</h4>
+      <ul>
+        <li>Membuat tampilan website sederhana yang menerapkan element - element HTML</li>
+      </ul>
+      <h4>Massive Challange</h4>
+      <ul>
+        <li>Coming soon ...</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="section">
+      <h3>💡 Kata - kata hari ini</h3>
+      <div class="form-group" style="text-align: center;">
+        <input type="text" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <textarea rows="3" placeholder="Tulis kata - kata di sini..."></textarea>
+      </div>
+      <button class="kirim">Kirim Pesan</button>
+    </div>
+  </div>
+</body>
+</html>
